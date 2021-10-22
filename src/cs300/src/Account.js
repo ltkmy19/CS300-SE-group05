@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Account.css";
 import ava from "./img/profile.PNG"
+import tree from "./img/tree.gif"
 function Account() {
     return (
         <div class="container emp-profile">
@@ -23,7 +24,7 @@ function Account() {
                                     <h6>
                                     World Champion
                                     </h6>
-                                    <p class="proile-rating">RANKINGS : <span>10/10</span></p>
+                                    <p class="proile-rating">Plant progress : <span>100%</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
@@ -98,7 +99,7 @@ function Account() {
                                         </div>
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                   
+                                   <img src={tree} />
                             </div>
                         </div>
                     </div>
