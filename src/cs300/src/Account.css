@@ -7,7 +7,8 @@
     margin-top: 3%;
     margin-bottom: 3%;
     border-radius: 0.5rem;
-    background: rgb(255, 255, 255);
+    border-style: solid;
+     border-color: rgb(187, 143, 158);
     
 }
 .profile-img{
