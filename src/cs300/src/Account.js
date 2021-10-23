@@ -26,10 +26,10 @@ function Account() {
                                     </h6>
                                     <p class="proile-rating">Plant progress : <span>100%</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
+                                <li class="nav-item Acc">
                                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item Acc">
                                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Planting</a>
                                 </li>
                             </ul>

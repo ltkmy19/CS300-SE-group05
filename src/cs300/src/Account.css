@@ -9,7 +9,6 @@
     border-radius: 0.5rem;
     border-style: solid;
      border-color: rgb(187, 143, 158);
-    
 }
 .profile-img{
     text-align: center;
@@ -96,6 +95,6 @@
     font-weight: 600;
     color: #0062cc;
 }
-.ProBod{
-    background-color: lightpink;
+.Acc {
+    color: black;
 }
