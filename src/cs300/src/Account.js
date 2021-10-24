@@ -2,6 +2,7 @@ import React from 'react'
 import "./Account.css";
 import ava from "./img/profile.PNG"
 import tree from "./img/tree.gif"
+
 function Account() {
     return (
         <div class="container emp-profile">
@@ -27,10 +28,13 @@ function Account() {
                                     <p class="proile-rating">Plant progress : <span>100%</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item Acc">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="home" aria-selected="true">About</a>
                                 </li>
                                 <li class="nav-item Acc">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Planting</a>
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tree" role="tab" aria-controls="profile" aria-selected="false">Planting</a>
+                                </li>
+                                <li class="nav-item Acc">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#lib" role="tab" aria-controls="profile" aria-selected="false">Library</a>
                                 </li>
                             </ul>
                         </div>
@@ -56,7 +60,7 @@ function Account() {
                     </div>
                     <div class="col-md-8">
                         <div class="tab-content profile-tab" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="home-tab">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <label>User Id</label>
@@ -98,7 +102,10 @@ function Account() {
                                             </div>
                                         </div>
                             </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="tab-pane fade" id="tree" role="tabpanel" aria-labelledby="profile-tab">
+                                   <img src={tree} />
+                            </div>
+                            <div class="tab-pane fade" id="tree" role="tabpanel" aria-labelledby="profile-tab">
                                    <img src={tree} />
                             </div>
                         </div>

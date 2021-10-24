@@ -1,15 +1,18 @@
 import React from 'react'
 import {BiSearchAlt} from "react-icons/bi"
+import Background from "./img/book-wallpaper-22142-22699-hd-wallpapers.jpg";
+
 function Home() {
     return (
-        <div class="input-group rounded" >
-  <input type="search" class="form-control rounded" width="80%" placeholder="Search" aria-label="Search"
+<body className="bg-img" style={{backgroundImage:{Background}}}> 
+    <div class="input-group bg-img" style={{paddingTop:`10%`,paddingLeft:`35%`, paddingRight:`35%`}}>
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
   aria-describedby="search-addon" />
-  <span class="input-group-text border-0" id="search-addon">
-      <a href="#"> <BiSearchAlt /></a>
-    
-  </span>
-</div>
+  <button type="button" class="btn btn-outline-primary">search</button> </div>
+  
+  </body>
+
+
     )
 }
 

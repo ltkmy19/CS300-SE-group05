@@ -1,7 +1,8 @@
 .Account body{
     background: rgb(223, 210, 224);
-
+    overflow: hidden;
 }
+
 .emp-profile{
     padding: 3%;
     margin-top: 3%;
@@ -9,6 +10,7 @@
     border-radius: 0.5rem;
     border-style: solid;
      border-color: rgb(187, 143, 158);
+   
 }
 .profile-img{
     text-align: center;
@@ -97,4 +99,9 @@
 }
 .Acc {
     color: black;
+}
+
+body .bg-img{
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
