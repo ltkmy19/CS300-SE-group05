@@ -22,7 +22,6 @@ function Home() {
     hihihihihihihdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
     hihihihihihihdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
     </h1>
-    ScrollReveal().reveal('.headline');
 
   </body>
 
