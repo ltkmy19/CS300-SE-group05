@@ -11,12 +11,15 @@ function Navbar() {
 
     return (
         <div class="container-fluid px-0 ">
-        <nav class="navbar navbar-expand-md navbar-light bg-darkblue p-0"> <a class="navbar-brand mr-4" href="/Home"><BsBook size="60px" style={icon} /></a> <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <nav class="navbar navbar-expand-md navbar-light bg-darkblue p-0"> 
+        {/* <a class="navbar-brand mr-4" href="/Home"><BsBook size="60px" style={icon} /></a>  */}
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                  
-                    <li class="nav-item"> <a class="nav-link " href="/Aboutus" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us<span class="fa fa-angle-down"></span></a>
-                        <div class="dropdown-menu" id="dropdown-menu2" aria-labelledby="navbarDropdown2">
+                    <li class="nav-item"> 
+                      <a class="nav-link " href="/Aboutus" >About Us</a>
+                    {/* <a class="nav-link " href="/Aboutus" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us<span class="fa fa-angle-down"></span></a> */}
+                        {/* <div class="dropdown-menu" id="dropdown-menu2" aria-labelledby="navbarDropdown2">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -55,7 +58,7 @@ function Navbar() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </li>
                     <li class="nav-item"> <a class="nav-link" href="/Category" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category<span class="fa fa-angle-down"></span></a>
                         <div class="dropdown-menu" id="dropdown-menu1" aria-labelledby="navbarDropdown1">

@@ -6,7 +6,7 @@ import Category from "./Category";
 import Navbar  from './Navbar';
 import Aboutus from './Aboutus';
 import Account from "./Account";
-
+import Navbar2 from "./Navbar2";
 function App() {
   const path = window.location.pathname;
 
@@ -16,6 +16,11 @@ function App() {
         {path !== '/' &&
           <div>
             <Navbar />
+          </div>
+        }
+        {path !== '/' && path !=='/Home' &&  path !=='/Account' &&
+          <div>
+            <Navbar2 />
           </div>
         }
     <Route exact path="/Home" component={Home} />

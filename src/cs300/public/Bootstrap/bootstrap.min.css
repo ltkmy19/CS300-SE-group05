@@ -3744,7 +3744,7 @@ tbody.collapse.show {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
+  padding-left: 9px;
   margin-bottom: 0;
   list-style: none;
 }
@@ -3770,6 +3770,7 @@ tbody.collapse.show {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-left: 1%;
 }
 .navbar-toggler {
   padding: 0.25rem 0.75rem;

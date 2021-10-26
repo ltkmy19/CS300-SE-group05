@@ -78,17 +78,17 @@ a {
 
 #dropdown-menu1 {
     position: absolute;
-    left: 240px;
+    left: 150px;
 }
 
-#dropdown-menu2 {
+/* #dropdown-menu2 {
     position: absolute;
     left:  100px
-}
+} */
 
 #dropdown-menu3 {
     position: absolute;
-    left: 400px
+    left: 290px
 }
 
 .tab {
