@@ -1,6 +1,6 @@
 import React from 'react'
 import {BiSearchAlt} from "react-icons/bi"
-import Background from "./img/book-wallpaper-22142-22699-hd-wallpapers.jpg";
+import Background from "./img/blank-sky-night-scene-with-blank-flood-landscape/y4bt_nczr_210428.jpg";
 import "./Page.css";
 
 function Home() {
