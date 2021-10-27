@@ -1,6 +1,6 @@
 import React from 'react'
 import {BiSearchAlt} from "react-icons/bi"
-import Background from "./img/blank-sky-night-scene-with-blank-flood-landscape/y4bt_nczr_210428.jpg";
+import Background from "./img/blur-hospital-clinic-interior.jpg"
 import "./Page.css";
 
 function Home() {
@@ -8,7 +8,8 @@ function Home() {
     return (
       
 <body  > 
-  <div  style={{backgroundImage: `url(${Background})`,  opacity: `0.8`}}>
+  <div  style={{backgroundImage: `url(${Background})`,  opacity: `0.8`,  backgroundSize: `100%`, backgroundRepeat:`no-repeat`
+}}>
     <div class="input-group bg-img fade"  style={{paddingTop:`10%`,paddingLeft:`35%`, paddingRight:`35%`,}}>
   <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
   aria-describedby="search-addon" />
