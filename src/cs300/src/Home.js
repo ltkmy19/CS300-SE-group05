@@ -16,7 +16,7 @@ function Home() {
   </div>
 
   </body>
-    )
+)
 }
 
 export default Home

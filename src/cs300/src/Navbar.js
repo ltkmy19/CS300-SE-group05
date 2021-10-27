@@ -12,7 +12,6 @@ function Navbar() {
     return (
         <div class="container-fluid px-0 ">
         <nav class="navbar navbar-expand-md navbar-light bg-darkblue p-0"> 
-        {/* <a class="navbar-brand mr-4" href="/Home"><BsBook size="60px" style={icon} /></a>  */}
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                  
@@ -144,10 +143,28 @@ function Navbar() {
                             </div>
                         </div>
                     </li>
-                 
+
+                    
+                    <li class="nav-item"> 
+                      <a class="nav-link " href="/Record" >New Record</a>
+                    </li>
                 </ul>
-           
-                <a class=" mx-1 acc"  href="/Account" ><VscAccount size="35px" style={icon}/></a>
+               <div class="dropdown">
+                   <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                                        <a class=" mx-1 acc"  href="/Account" ><VscAccount size="35px" style={icon}/></a>
+                           </button>
+                   <div class="dropdown-menu" aria-labelledby="triggerId">
+                       <a class="dropdown-item" href="/Account">Profile</a>
+                       <div class="dropdown-divider"></div>
+                       <a class="dropdown-item" href="#">My record</a>
+                       <div class="dropdown-divider"></div>
+
+                       <a class="dropdown-item" href="#">My favorite</a>
+                       <div class="dropdown-divider"></div>
+                   </div>
+               </div>
+       
                    
                     
                

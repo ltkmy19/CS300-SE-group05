@@ -7,6 +7,7 @@ import Navbar  from './Navbar';
 import Aboutus from './Aboutus';
 import Account from "./Account";
 import Navbar2 from "./Navbar2";
+import Record from "./Record";
 function App() {
   const path = window.location.pathname;
 
@@ -27,6 +28,7 @@ function App() {
     <Route exact path="/Category" component={Category} />
     <Route exact path="/Aboutus" component={Aboutus} />
     <Route exact path="/Account" component={Account} />
+    <Route exact path="/Record" component={Record} />
     </div>
   );
 }
