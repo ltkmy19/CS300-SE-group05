@@ -8,7 +8,7 @@ import { BsBook } from "react-icons/bs";
 
 function Navbar() {
     const icon = { color: "white", fontSize: "1.5em" }
-
+    
     return (
         <div class="container-fluid px-0 ">
         <nav class="navbar navbar-expand-md navbar-light bg-darkblue p-0"> 
@@ -152,15 +152,16 @@ function Navbar() {
                <div class="dropdown">
                    <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false">
-                                        <a class=" mx-1 acc"  href="/Account" ><VscAccount size="35px" style={icon}/></a>
+                                        <a class=" mx-1 acc"  href="/Account" ><VscAccount size="30px" style={icon}/></a>
                            </button>
                    <div class="dropdown-menu" aria-labelledby="triggerId">
                        <a class="dropdown-item" href="/Account">Profile</a>
                        <div class="dropdown-divider"></div>
                        <a class="dropdown-item" href="#">My record</a>
                        <div class="dropdown-divider"></div>
-
                        <a class="dropdown-item" href="#">My favorite</a>
+                       <div class="dropdown-divider"></div>
+                       <a class="dropdown-item" href="/">Log out</a>
                        <div class="dropdown-divider"></div>
                    </div>
                </div>
