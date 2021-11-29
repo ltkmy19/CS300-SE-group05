@@ -5704,7 +5704,7 @@ button.bg-light:hover {
 .bg-darkblue{
   /* background-color: #13406d  */
   /* background-color: #02386E !important;; */
-  background-color: var(--cyan);
+  background-color: mediumpurple;
 
 }
 a.bg-dark:focus,
