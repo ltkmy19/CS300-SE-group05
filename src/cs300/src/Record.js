@@ -36,27 +36,17 @@ function Record() {
         <option >Entertainment</option>
         <option >Gay &amp; Lesbian</option>
         <option >Health &amp;  Fitness</option>
-        <option >Hobbies &amp; Crafts</option>
-        <option >Home &amp; Garden</option>
         <option >Horror</option>
         <option >Kids</option>
         <option >Literature &amp; Fiction</option>
-        <option >Medical</option>
         <option >Mysteries</option>
-        <option >Parenting</option>
         <option >Religion</option>
         <option >Romance</option>
         <option >Sci-Fi &amp; Fantasy</option>
         <option >Science &amp; Math</option>
-        <option >Self-Help</option>
-        <option >Social Sciences</option>
         <option >Sports</option>
-        <option >Teen</option>
-        <option >Travel</option>
+        <option >Teenfic</option>
         <option >True Crime</option>
-        <option >Offers</option>
-        <option >Special Editions</option>
-        <option >Website</option>
         <option>Others</option>
 </select>
 
