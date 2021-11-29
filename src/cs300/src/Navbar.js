@@ -4,6 +4,7 @@ import "./Navbar.css";
 import logo from "./img/logo_200x200.png";
 import { VscAccount } from "react-icons/vsc";
 import { BsBook } from "react-icons/bs";
+import { IconContext } from 'react-icons/lib';
 
 
 function Navbar() {
@@ -14,7 +15,9 @@ function Navbar() {
         <nav class="navbar navbar-expand-md navbar-light bg-darkblue p-0"> 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                 
+                <li class="nav-item"> 
+                      <a class="nav-link " href="/Home" >Home</a>
+                    </li>
                     <li class="nav-item"> 
                       <a class="nav-link " href="/Aboutus" >About Us</a>
                     {/* <a class="nav-link " href="/Aboutus" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us<span class="fa fa-angle-down"></span></a> */}
@@ -119,7 +122,7 @@ function Navbar() {
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community<span class="fa fa-angle-down"></span></a>
+                    {/* <li class="nav-item"> <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community<span class="fa fa-angle-down"></span></a>
                         <div class="dropdown-menu" id="dropdown-menu3" aria-labelledby="navbarDropdown3">
                             <div class="container">
                                 <div class="row">
@@ -142,17 +145,17 @@ function Navbar() {
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li> */}
 
                     
                     <li class="nav-item"> 
-                      <a class="nav-link " href="/Record" >New Record</a>
+                      <a class="nav-link " href="/Record" >Publish</a>
                     </li>
                 </ul>
-               <div class="dropdown">
+               <div class="dropdown" >
                    <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">
-                                        <a class=" mx-1 acc"  href="/Account" ><VscAccount size="30px" style={icon}/></a>
+                           aria-expanded="false" >
+                                    <IconContext.Provider value={{ color: "Black"}}>  <a class=" mx-1 acc"  href="/Account"  ><VscAccount  value={{ color: "blue" }} size="30px" /></a></IconContext.Provider>  
                            </button>
                    <div class="dropdown-menu" aria-labelledby="triggerId">
                        <a class="dropdown-item" href="/Account">Profile</a>
