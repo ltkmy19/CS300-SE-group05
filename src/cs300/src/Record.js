@@ -57,8 +57,8 @@ function Record() {
 </select>
 
     <div class="form-field col-lg-6 ">
-         <input id="cover"  type="image"  />
-         <label class="label" for="cover">Cover</label>
+        <input type="file" name="file" required/>
+         <label class="labelcover" for="cover">Cover</label>
       </div>
 
       <div class="form-field col-lg-12">
