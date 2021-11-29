@@ -11,11 +11,11 @@ function Navbar() {
     const icon = { color: "white", fontSize: "1.5em" }
     
     return (
-        <div class="container-fluid px-0 ">
-        <nav class="navbar navbar-expand-md navbar-light bg-darkblue p-0"> 
-            <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="container-fluid1 px-0 ">
+        <nav class="navbar navbar-expand-md navbar-light bg-darkblue p-0" > 
+            <div class="collapse navbar-collapse" id="navbarNav" >
                 <ul class="navbar-nav">
-                <li class="nav-item"> 
+                <li class="nav-item" > 
                       <a class="nav-link " href="/Home" >Home</a>
                     </li>
                     <li class="nav-item"> 
@@ -150,6 +150,9 @@ function Navbar() {
                     
                     <li class="nav-item"> 
                       <a class="nav-link " href="/Record" >Publish</a>
+                    </li>
+                    <li class="nav-item"> 
+                      <a class="nav-link " href="/TreeStore" >Tree Store</a>
                     </li>
                 </ul>
                <div class="dropdown" >

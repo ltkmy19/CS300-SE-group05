@@ -21,6 +21,10 @@ function Record() {
          <input id="ebook" class="input-text js-input" type="url"  />
          <label class="label" for="ebook">Ebook</label>
       </div>
+      <div class="form-field col-lg-6 ">
+         <input id="buy" class="input-text js-input" type="url"  />
+         <label class="label" for="buy">Buy</label>
+      </div>
       <select class="form-field col-lg-6 " aria-label="Default select example" required>
         <option selected>Category</option>
          <option > Arts &amp; Music</option>

@@ -8,12 +8,13 @@ function Home() {
     return (
       
 <body  > 
-  <div  style={{backgroundImage: `url(${Background})`,  opacity: `0.8`,  backgroundSize: `100%`, backgroundRepeat:`no-repeat`
+  <div  style={{backgroundImage: `url(${Background})`,  backgroundSize: `100%`, backgroundRepeat:`no-repeat`,  height:'400px' 
 }}>
-    <div class="input-group bg-img fade"  style={{paddingTop:`10%`,paddingLeft:`35%`, paddingRight:`35%`,}}>
+  <h3 style={{color:'white', paddingTop:`6%`,paddingLeft:`40%`, paddingRight:`35%`}}>What are you reading?</h3>
+    <div class="input-group bg-img fade"  style={{paddingTop:`2%`,paddingLeft:`35%`, paddingRight:`35%`,}}>
   <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
   aria-describedby="search-addon" />
-  <a type="button" class="btn btn-outline-primary" href="/Aboutus">search</a> </div>
+  <a type="button" class="btn btn-outline-home" href="/Aboutus">search</a> </div>
   </div>
 
   </body>

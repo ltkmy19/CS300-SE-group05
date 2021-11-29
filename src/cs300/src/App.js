@@ -8,6 +8,7 @@ import Aboutus from './Aboutus';
 import Account from "./Account";
 import Navbar2 from "./Navbar2";
 import Record from "./Record";
+import TreeStore from './TreeStore';
 function App() {
   const path = window.location.pathname;
 
@@ -29,6 +30,7 @@ function App() {
     <Route exact path="/Aboutus" component={Aboutus} />
     <Route exact path="/Account" component={Account} />
     <Route exact path="/Record" component={Record} />
+    <Route exact path="/TreeStore" component={TreeStore} />
     </div>
   );
 }

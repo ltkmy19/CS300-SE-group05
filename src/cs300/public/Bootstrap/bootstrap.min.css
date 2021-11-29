@@ -530,6 +530,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
 }
 .row {
   display: -webkit-box;
@@ -2664,6 +2665,7 @@ fieldset:disabled a.btn {
   background-color: #007bff;
   border-color: #007bff;
 }
+
 .btn-outline-primary.focus,
 .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
@@ -5704,7 +5706,7 @@ button.bg-light:hover {
 .bg-darkblue{
   /* background-color: #13406d  */
   /* background-color: #02386E !important;; */
-  background-color: mediumpurple;
+  background-color: midnightblue;
 
 }
 a.bg-dark:focus,
@@ -8323,4 +8325,6 @@ a.text-dark:hover {
     border: 1px solid #ddd !important;
   }
 }
+
+
 /*# sourceMappingURL=bootstrap.min.css.map */

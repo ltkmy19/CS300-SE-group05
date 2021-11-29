@@ -294,3 +294,44 @@ a {
   -webkit-transform .2s ease-in-out;
 }
 
+.btn-outline-home {
+  color: #007bff;
+  background-color: white;
+  background-image: none;
+  border-color: #007bff;
+}
+.btn-outline-home:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-home.focus,
+.btn-outline-home:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+.btn-outline-home.disabled,
+.btn-outline-home:disabled {
+  color: #007bff;
+  background-color: transparent;
+}
+.btn-outline-home:not(:disabled):not(.disabled).active,
+.btn-outline-home:not(:disabled):not(.disabled):active,
+.show > .btn-outline-home.dropdown-toggle {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-outline-home:not(:disabled):not(.disabled).active:focus,
+.btn-outline-home:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-home.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+.container-fluid1 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
