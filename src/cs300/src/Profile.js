@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Account.css";
+import "./Profile.css";
 import ava from "./img/profile-0-Enhanced-Animated.gif"
 import tree from "./img/tree.gif"
 

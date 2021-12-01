@@ -5,10 +5,11 @@ import Home from "./Home";
 import Category from "./Category";
 import Navbar  from './Navbar';
 import Aboutus from './Aboutus';
-import Account from "./Account";
+import Account from "./Profile";
 import Navbar2 from "./Navbar2";
 import Record from "./Record";
 import TreeStore from './TreeStore';
+import Mybook from './Mybook';
 function App() {
   const path = window.location.pathname;
 
@@ -28,9 +29,10 @@ function App() {
     <Route exact path="/Home" component={Home} />
     <Route exact path="/Category" component={Category} />
     <Route exact path="/Aboutus" component={Aboutus} />
-    <Route exact path="/Account" component={Account} />
+    <Route exact path="/Profile" component={Account} />
     <Route exact path="/Record" component={Record} />
     <Route exact path="/TreeStore" component={TreeStore} />
+    <Route exact path="/MyBook" component={Mybook} />
     </div>
   );
 }

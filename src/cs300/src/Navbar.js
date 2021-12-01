@@ -291,11 +291,9 @@ function Navbar() {
                                     <IconContext.Provider value={{ color: "Black"}}>  <a class=" mx-1 acc"  href="/Account"  ><VscAccount  value={{ color: "blue" }} size="30px" /></a></IconContext.Provider>  
                            </button>
                    <div class="dropdown-menu" aria-labelledby="triggerId">
-                       <a class="dropdown-item" href="/Account">Profile</a>
+                       <a class="dropdown-item" href="/Profile">Profile</a>
                        <div class="dropdown-divider"></div>
-                       <a class="dropdown-item" href="#">My record</a>
-                       <div class="dropdown-divider"></div>
-                       <a class="dropdown-item" href="#">My favorite</a>
+                       <a class="dropdown-item" href="/MyBook">My book</a>
                        <div class="dropdown-divider"></div>
                        <a class="dropdown-item" href="/">Log out</a>
                        <div class="dropdown-divider"></div>

@@ -5706,7 +5706,7 @@ button.bg-light:hover {
 .bg-darkblue{
   /* background-color: #13406d  */
   /* background-color: #02386E !important;; */
-  background-color: #1A237E;
+  background-image: linear-gradient(125deg,#a72879,#064497);
 
 }
 a.bg-dark:focus,
