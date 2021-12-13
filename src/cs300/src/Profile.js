@@ -2,6 +2,8 @@ import React from 'react'
 import "./Profile.css";
 import ava from "./img/profile-0-Enhanced-Animated.gif"
 import tree from "./img/tree.gif"
+import {Route, Link} from "react-router-dom";
+import Edit from "./EditProfile";
 
 function Account() {
     return (
@@ -40,7 +42,7 @@ function Account() {
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                        <Link to="/EditProfile" className="btn btn-primary">Edit Profile</Link>
                     </div>
                 </div>
                 <div class="row">
