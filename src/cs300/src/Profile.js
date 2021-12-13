@@ -42,7 +42,7 @@ function Account() {
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <Link to="/EditProfile" className="btn btn-primary">Edit Profile</Link>
+                        <Link to="/EditProfile" id="profile-edit-btn">Edit Profile</Link>
                     </div>
                 </div>
                 <div class="row">
