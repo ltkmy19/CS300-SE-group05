@@ -1,13 +1,77 @@
 import React from "react"
-import {Route, Link} from "react-router-dom";
 import "./EditProfile.css";
-import "./UpdateProfile";
+import {Route, Link} from "react-router-dom";
+import "./index";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+import { render } from "@testing-library/react";
 
+const firebaseConfig = {
+    apiKey: "AIzaSyBrwCV5VZMrYP53rUd0RLpLpxUqQSPY6jE",
+    authDomain: "rebook-4261f.firebaseapp.com",
+    projectId: "rebook-4261f",
+    storageBucket: "rebook-4261f.appspot.com",
+    messagingSenderId: "302684411026",
+    appId: "1:302684411026:web:be876d0ac01f1b51bd424b",
+    measurementId: "G-WD7MNZX6ZJ"
+  };
+firebase.initializeApp(firebaseConfig);
+const database = firebase.firestore();
 
-function Edit() {
+function Edit(){
+        const [userId, setId] = React.useState("");
+        const [userName, setName] = React.useState("");
+        const [email, setEmail] = React.useState("");
+        const [phoneNum, setPhone] = React.useState("");
+        const [professions, setProfessions] = React.useState("");
+
+        const db = firebase.firestore();
+
+        const getUserId= (event) => {
+            setId(event.target.userId);  
+        };
+        const getUserName= (event) => {
+            setName(event.target.userName);  
+        };
+        const getEmail= (event) => {
+            setEmail(event.target.email);  
+        };
+        const getPhoneNum= (event) => {
+            setPhone(event.target.phoneNum);  
+        };
+        const getProfessions= (event) => {
+            setProfessions(event.target.professions);  
+        };
+      
+        function updateBtn(e){
+            e.preventDefault();
+            db.collection('users').doc('01').set({
+                Name: 'userName',
+                Mail: 'email',
+                Phone: 'phoneNum',
+                Professions: 'professions'
+            })
+            .then( () => {console.log("Successfully written!");})
+            .catch( (error) => {console.error("Error", error);})
+            return e.preventDefault();
+        };
+    
+    /*function updateBtn( (e) => {
+        e.preventDefault();
+        usersCollection.doc(userId.value).set({
+            userName:  userName.value,
+            email: email.value,
+            phoneNum: phoneNum.value,
+            professions: professions.value
+        })
+        .then( () => {console.log('Update profile successfully');})
+        .catch(error => {console.log(error);})
+        return e.preventDefault();
+    }[userName.value,email.value,phoneNum.value,professions.value];
+*/
+    render()
     return (
         <div class="container emp-profile">
-        <form method="post">
             <div class="row">
                 <div class="col-md-4">
                     <div class="profile-work">
@@ -28,50 +92,49 @@ function Edit() {
                         <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label id="userId">User Id</label>
-                                            <input id="userId" type="text" name="userId" placeholder="Enter your user ID" />
+                                            <label for="userId">User Id</label>
+                                            <input onBlur={getUserId} type="text" placeholder="Enter your user ID" />
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-6"> 
-                                            <label id="userName">User Name</label>
-                                            <input id="userName" type="text" name="userName" placeholder="Enter your name" />       
+                                            <label for="userName">User Name</label>
+                                            <input onBlur={getUserName} type="text" placeholder="Enter your name" />       
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-6"> 
-                                            <label id="email">Email</label>
-                                            <input id="email" type="text" name="email" placeholder="Enter your email" />       
+                                            <label for="email">Email</label>
+                                            <input onBlur={getEmail} type="text" placeholder="Enter your email" />       
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label id="phoneNum">Phone</label>
-                                            <input id="phoneNum" type="text" name="phoneNum" placeholder="Enter your phone number" />
+                                            <label for="phoneNum">Phone</label>
+                                            <input onBlur={getPhoneNum} type="text" placeholder="Enter your phone number" />
                                             </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label id="professions">Profession</label>
-                                            <input id="professions" type="text" name="professions" placeholder="Enter your profession" />
+                                            <label for="professions">Profession</label>
+                                            <input onBlur={getProfessions} type="text" placeholder="Enter your profession" />
                                         </div>
                                     </div>
 
                                     <div class="row-md-2">
-                                        <button id="updateBtn">
-                                            <Link to="/UpdateProfile"></Link>Update Profile</button>   
+                                        <button type="button" class="updateBtn" onClick={updateBtn}>Update Profile</button>   
                                     </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>           
+            </div>           
     </div>
-    )
+    );
+    
 }
 
 export default Edit

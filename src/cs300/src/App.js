@@ -10,8 +10,8 @@ import Navbar2 from "./Navbar2";
 import Record from "./Record";
 import TreeStore from './TreeStore';
 import Mybook from './Mybook';
-import Edit from './EditProfile';
-import update from './UpdateProfile';
+import Edit from "./EditProfile";
+
 function App() {
   const path = window.location.pathname;
 
@@ -36,7 +36,6 @@ function App() {
     <Route exact path="/TreeStore" component={TreeStore} />
     <Route exact path="/MyBook" component={Mybook} />
     <Route exact path="/EditProfile" component={Edit} />
-    <Route exact path="/EditProfile/UpdateProfile" component={update} />
 
     </div>
   );
